@@ -17,6 +17,10 @@ identidock:
     #объявление установления соединения из контейнера identidock с контейнером dnmonster
     links:
         - dnmonster
+        - redis
 #определение нового контейнера dnmonster
 dnmonster:
     image: amouat/dnmonster:1.0
+
+redis:
+    image: redis:3.0
