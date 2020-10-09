@@ -14,3 +14,9 @@ identidock:
     # аналогичен аргументу -v и служит для определения томов
     volumes: 
         - ./app:/app
+    #объявление установления соединения из контейнера identidock с контейнером dnmonster
+    links:
+        - dnmonster
+#определение нового контейнера dnmonster
+dnmonster:
+    image: amouat/dnmonster:1.0
